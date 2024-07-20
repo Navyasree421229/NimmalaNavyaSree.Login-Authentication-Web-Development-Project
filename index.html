@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="row1">
+            <h2>Login Authentication</h2>
+            <p>A Web Development task by <a href="https://devtern.tech/">Devtern</a></p>
+        </div>
+        <div class="row2">
+            <form id="loginForm">
+                <div class="r1">
+                    <label>Username</label><br>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="r1">
+                    <label>Password</label><br>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="cb">
+                    <label>
+                        <input type="checkbox"> Keep me logged in
+                    </label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Login Successful!</p>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Login Failed. Please check your credentials.</p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
